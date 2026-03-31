@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа | ОГЭ информатика</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f0ff 0%, #e8e0ff 100%);
+            font-family: 'Inter', sans-serif;
+            color: #1e1a2f;
+            line-height: 1.5;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1000px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #6b4e9e;
+        }
+        .subtitle {
+            color: #5a4a7a;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #cdb8ff;
+            padding-bottom: 1rem;
+        }
+        .task {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #cdb8ff;
+        }
+        .task:last-child {
+            border-bottom: none;
+        }
+        .task-number {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #8b5cf6;
+            margin-bottom: 0.8rem;
+        }
+        .task-text {
+            background: white;
+            padding: 1rem;
+            border-left: 4px solid #8b5cf6;
+            border-radius: 0.5rem;
+            font-family: monospace;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+            white-space: pre-wrap;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .task-text p {
+            margin-bottom: 0.5rem;
+        }
+        .task-text code {
+            background: #f0ebff;
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.3rem;
+            color: #6b4e9e;
+        }
+        .download-link {
+            display: inline-block;
+            background: #e9e0ff;
+            border: 1px solid #8b5cf6;
+            color: #6b4e9e;
+            padding: 0.4rem 1rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-right: 1rem;
+            margin-bottom: 0.8rem;
+            transition: 0.2s;
+        }
+        .download-link:hover {
+            background: #8b5cf6;
+            color: white;
+        }
+        .solution-btn {
+            background: #f0ebff;
+            border: 1px solid #8b5cf6;
+            color: #6b4e9e;
+            padding: 0.4rem 1rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .solution-btn:hover {
+            background: #8b5cf6;
+            color: white;
+        }
+        .solution {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            margin-top: 0.8rem;
+        }
+        .solution.show {
+            max-height: 500px;
+            transition: max-height 0.5s ease-in;
+        }
+        .video-wrapper video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            border-radius: 0.75rem;
+        }
+        .answer {
+            background: #f0ebff;
+            padding: 0.8rem;
+            border-radius: 0.5rem;
+            color: #6b4e9e;
+            font-size: 0.9rem;
+        }
+        .answer pre {
+            background: white;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-top: 0.5rem;
+            font-family: monospace;
+            font-size: 0.85rem;
+        }
+        .back-link {
+            display: inline-block;
+            color: #8b5cf6;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: left;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #cdb8ff;
+            color: #8b7aa8;
+            font-size: 0.85rem;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background: #cdb8ff;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="https://Vasilekyanina-source.github.io/" class="back-link">← На главную</a>
+    <a href="https://Vasilekyanina-source.github.io/Informatics3/index.html" class="back-link">← К урокам</a>
+    <h1>📝 Задания 14 для самостоятельной работы</h1>
+    <div class="subtitle">Здесь представлены различные 14 задания для тренировки. Файлы, необходимые для выполнения, доступны для скачивания — под каждым заданием. Если вы хотите проверить свое решение или затрудняетесь в решении, то можно воспользоваться видеоразбором, которое можно открыть по кнопке после каждого задания.</div>
+
+    <!-- ЗАДАНИЕ 1 -->
+    <div class="task">
+        <div class="task-number">Задание 1</div>
+        <div class="task-text">
+В электронную таблицу занесли данные о численности населения городов разных стран. Ниже приведены первые пять строк таблицы.
+     <img src="для 1 (14).jpg" alt="Задание 1" style="width: 50%; height: auto; margin: 1rem 0;">
+В столбце A указано название города; в столбце B – численность населения (тыс. человек); в столбце C – название страны.
+Всего в электронную таблицу были занесены данные по 1000 городов. Порядок записей в таблице произвольный.
+Откройте файл с данной электронной таблицей (расположение файла Вам сообщат организаторы экзамена). На основании данных, содержащихся
+в этой таблице, выполните задания.
+1.     Сколько городов Республики Беларусь представлено в таблице? Ответ запишите в ячейку F2.
+2.     Какова средняя численность населения городов, в которых количество жителей не превышает 100 тыс. человек? Ответ на этот вопрос с точностью не менее двух знаков после запятой (в тыс. человек) запишите в ячейку F3 таблицы.
+3.     Постройте круговую диаграмму, отображающую соотношение количества городов Республики Беларусь, Египта и Турции, представленных в таблице. Левый верхний угол диаграммы разместите вблизи ячейки G6. В поле диаграммы должны присутствовать легенда (обозначение, какой сектор диаграммы соответствует каким данным)
+и числовые значения данных, по которым построена диаграмма.
+Полученную таблицу необходимо сохранить под именем, указанным организаторами экзамена.
+        </div>
+        <a href="img1_1760010553.zip" class="download-link" download>📎 Скачать файлы для задания 1</a>
+        <button class="solution-btn" data-target="sol1">🎬 Показать решение</button>
+        <div id="sol1" class="solution">
+            <div class="video-wrapper">
+        <iframe src="https://vk.com/video_ext.php?oid=-236134792&id=456239024&hash=111e9f6ce368f7e5&autoplay=1" width="853" height="480" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+<footer>
+    <p>КодОГЭ — подготовка к экзамену</p>
+</footer>
+
+<script>
+    document.querySelectorAll('.solution-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const target = document.getElementById(this.dataset.target);
+            if (target) {
+                target.classList.toggle('show');
+                this.textContent = target.classList.contains('show') ? '🎬 Скрыть решение' : '🎬 Показать решение';
+            }
+        });
+    });
+</script>
+</body>
+</html>
